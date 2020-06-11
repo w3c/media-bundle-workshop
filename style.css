@@ -142,7 +142,7 @@ a.ref {
   margin-bottom: 2rem;
   padding: 1em;
   width: 19em;
-  background-color: white;
+  background-color: #f2fdff;
 }
 
 .box h2 {
@@ -860,4 +860,13 @@ figure {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.references {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.references h4 {
+  margin-bottom: 0.5rem;
 }
