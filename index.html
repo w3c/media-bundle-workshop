@@ -116,6 +116,7 @@
               <li>How does the need to maintain <b>variants</b> of rich media experiences (e.g. for different languages, resolutions or color spaces) affect packaging strategies?</li>
               <li>Do possible bundling solutions play nicely with <b>edge cache servers</b>? For instance, do they allow to distribute content from edge cache servers in a way that preserves Web security guarantees (based on the notion of <em>origin</em>), and avoids duplication of content?</lia>
               <li>What synergies exist between bundling of rich media content and bundling of other types of content?</li>
+              <li>What mechanisms may allow the <b>integration of monetization schemes</b> in a bundled experience?</li>
             </ul>
 
             <section class="references">
@@ -132,7 +133,7 @@
           </section>
 
           <section>
-            <h3 id="orchestration">Orchestration of media and non-media content</h3>
+            <h3 id="orchestration">Orchestration of rich media experiences</h3>
 
             <ul>
               <li>How to <b>orchestrate synchronized playback</b> of media and non-media content? For example, how to make a tutorial-like experience, where a lecture is presented, in context, in a web experience, with slides and diagrams delivered using web technologies but synchronized to the video?</li>
@@ -140,6 +141,8 @@
               <li>What common formats may be used to describe <b>non-media content</b> attached to the media timeline?</li>
               <li>How does the need to fetch external resources (such as images, scripts or side media) for rendering at specific points of the media timeline affect the modeling of these resources in a rich media experience? In streaming use cases, what mechanisms can be used to allow playback to start from an arbitrary position in its media timeline, fetching only the resources that are useful to create the media experience at that position?</li>
               <li>How to manage <b>content overlays</b>, e.g. to track players in live sport events? How to guarantee frame-accuracy rendering when needed?</li>
+              <li>How to manage the insertion of <b>interstitial content</b> (pre-roll, mid-roll, post-roll) with varying lengths? How does insertion affect the timeline and ability to seek into a media stream?</li>
+              <li>How to guarantee <b>smooth playback transitions</b> between a main media stream and interstitial content, especially when media parameters (e.g. codec, resolution, tracks) differ?</li>
               <li>What capabilities&nbsp;—APIs, semantics, techniques for rendering, processing, personalization, customization, interoperability, etc.—&nbsp;can developers leverage to ensure <b>accessibility</b> of rich media experiences? Are there <b>internationalization</b> considerations?</li>
             </ul>
 
@@ -155,25 +158,6 @@
                 <li><a href="https://wicg.github.io/datacue/">DataCue API</a></li>
                 <li><a href="https://svgwg.org/specs/streaming/">SVG Streaming</a></li>
                 <li><a href="https://w3c.github.io/apa/media-accessibility-reqs/">Media Accessibility User Requirements</a></li>
-              </ul>
-            </section>
-          </section>
-
-          <section>
-            <h3 id="advertising">Advertising and ad insertion</h3>
-
-            <ul>
-              <li>How to manage the insertion of <b>interstitial content</b> (pre-roll, mid-roll, post-roll) with varying lengths? How does insertion affect the timeline and ability to seek into a media stream?</li>
-              <li>How to detect and specify <b>splicing points</b> for interstitial content within the main media stream?</li>
-              <li>How to guarantee <b>smooth playback transitions</b> between the main media stream and interstitial content, especially when media parameters (e.g. codec, resolution, tracks) differ?</li>
-              <li>What mechanisms may allow the <b>integration of monetization schemes</b> in a bundled experience?</li>
-            </ul>
-
-            <section class="references">
-              <h4 id="advertising-ref">Some relevant documents</h4>
-              <ul>
-                <li><a href="https://www.w3.org/TR/media-timed-events/">Requirements for Media Timed Events</a></li>
-                <li><a href="https://wicg.github.io/datacue/">DataCue API</a></li>
                 <li><a href="https://github.com/wicg/media-source/blob/codec-switching/codec-switching-explainer.md">Codec switching in Media Source Extensions</a></li>
               </ul>
             </section>
@@ -210,8 +194,8 @@
             <section class="references">
               <h4 id="landscape-ref">Some relevant documents</h4>
               <ul>
-                <li><a href="https://w3c.github.io/ColorWeb-CG/">High Dynamic Range and Wide Gamut Color on the Web</a></li>
                 <li><a href="https://w3c.github.io/web-roadmaps/media/">Overview of Media Technologies for the Web</a></li>
+                <li><a href="https://w3c.github.io/ColorWeb-CG/">High Dynamic Range and Wide Gamut Color on the Web</a></li>
               </ul>
             </section>
           </section>
