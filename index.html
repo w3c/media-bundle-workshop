@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>[DRAFT] W3C Workshop on Bundling Interactive Media Content on the Web</title>
+    <title>[DRAFT] W3C Workshop on Rich Media Experiences on the Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <meta name="twitter:site" content="@w3c">
     <meta name="twitter:card" content="summary">
-    <meta property="og:title" content="W3C Workshop on Bundling Interactive Media Content">
+    <meta property="og:title" content="W3C Workshop on Rich Media Experiences on the Web">
     <meta property="og:description" content="@@">
     <meta property="og:image" content="@@">
   </head>
@@ -20,10 +20,10 @@
             "media/w3c_home_nb-v.svg" height="48" width="72"></a>
           </p>
           <h1>
-            <span class="todo">[DRAFT]</span> W3C Workshop on Bundling Interactive Media Content on the Web
+            <span class="todo">[DRAFT]</span> W3C Workshop on Rich Media Experiences on the Web
           </h1>
-          <p class="todo">
-            ?? ??? 2020; somewhere
+          <p>
+            A virtual event with pre-recorded talks and interactive sessions, <span class="todo">??? 2020</span>
           </p>
         </div>
       </div>
@@ -32,37 +32,46 @@
           <li>
             <a class="active-tab">Call for Participation</a>
           </li>
+          <li>
+            <a href="speakers.html">Apply as a speaker</a>
+          </li>
         </ul>
       </nav>
     </header>
+    <aside class="box" id="important">
+      <h2 class="footnote">
+        Virtual event!
+      </h2>
+      <p>
+        This workshop will be a 100% virtual event with both pre-recorded talks and interactive sessions.
+      </p>
+    </aside>
     <aside class="box" id="dates">
       <h2 class="footnote">
         Important Dates
       </h2>
       <dl>
         <dt><span class="todo">TBD</span></dt>
-        <dd><a href="#registration">Registration</a> and <a href="#position-statement">Position statements</a> deadline</dd>
+        <dd>Deadline to <a href="speakers.html#submit">submit a proposal for a talk</a></dd>
         <dt><span class="todo">TBD</span></dt>
-        <dd>Acceptance notification</dd>
+        <dd>Speakers acceptance notification</dd>
         <dt><span class="todo">TBD</span></dt>
-        <dd>Program announced</dd>
+        <dd>Deadline for selected speakers to <a href="speakers.html#how">provide their recorded talks</a></dd>
         <dt><span class="todo">TBD</span></dt>
-        <dd>Workshop</dd>
+        <dd>Deadline to <span class="todo">register as workshop participant</span></dd>
+        <dt><span class="todo">TBD</span></dt>
+        <dd>Public release of all accepted talks</dd>
+        <dt><span class="todo">TBD</span></dt>
+        <dd>Series of 4-5 virtual live sessions</dd>
       </dl>
     </aside>
     <aside class="box" id="submit">
       <h2 class="footnote">
-        Registration and Position Statements
+        Give a talk at the workshop!
       </h2>
       <p>
-        Fill out the <span class="todo">registration form (TBD)</span> and consider submitting a <a href="#position-statement">position statement</a>.
+        If you think you have a perspective on interactive media experiences on the Web worth sharing with the broader community, we would love to hear from you! See our speakers information to learn how to submit a talk and what we will expect from you if you are selected.
       </p>
-    </aside>
-    <aside class="box box-host" id="host">
-      <h2 class="footnote">
-        Host
-      </h2>
-      <p class="todo">TBD</p>
     </aside>
     <aside class="box" id="sponsors">
       <h2 class="footnote">
@@ -73,13 +82,13 @@
     <main id="main" class="main">
       <section id="home">
         <p class="todo">
-          This is an <b>unofficial draft</b> call for participation to an <b>unconfirmed</b> W3C Workshop on Bundling Interactive Media Content on the Web.
+          This is an <b>unofficial draft</b> call for participation to an <b>unconfirmed</b> W3C Workshop on Interactive Media Content on the Web.
         </p>
         <section id="intro">
           <h2 id="goals">
             What is the purpose of this workshop?
           </h2>
-          <p>The primary goal of the workshop is to bring together browser vendors, content owners, encoding and authoring tool makers, distributors and distribution enablers, experts in media standards and other relevant areas (e.g. accessibility, scripting, security, web) <b>to converge on technologies for bundling and playback of <em>interactive</em> media content on the Open Web Platform for offline distribution and streaming scenarios</b>, and extend the platform with additional technologies when needed.</p>
+          <p>The primary goal of the workshop is to bring together browser vendors, content owners, encoding and authoring tool makers, distributors and distribution enablers, experts in media standards and other relevant areas (e.g. accessibility, scripting, security, web) <b>to converge on technologies for bundling and playback of <a href="#rich-media-experience">rich media experiences</a> on the Open Web Platform for offline distribution and streaming scenarios</b>, and extend the platform with additional technologies when needed.</p>
 
           <p>The secondary goals of the workshop are as follows:</p>
           <ul>
@@ -88,58 +97,117 @@
             <li>Evaluate the opportunities for aligning technical standards used to create interactive media experiences across distribution channels (live streaming, video-on-demand streaming, broadcast, offline)</li>
           </ul>
 
-          <p>We won't just be listening to presentations. We will be actively participating in breakout sessions and working discussions covering <a href="#topics">topics identified as relevant to the participants</a>.</p>
+          <p>In this document, the term <dfn id="rich-media-experience">rich media experience</dfn> refers to a playback experience with an internal timeline composed of a mix of media content (audio, video), non-media content (captions, images, overlays), content personalized on the fly, and/or interactive content.</p>
         </section>
         <section>
           <h2 id="topics">
             Which topics will be covered?
           </h2>
-          <ul>
-            <li>How to bundle audio/video content with non-media content and user interactions for <b>streaming use cases</b>? For instance, how to bundle a live stream for a sports event with non-media content such as players' statistics in real-time?</li>
-            <li>How to bundle audio/video content with non-media content and user interactions for <b>offline distribution</b> across devices and runtimes? For instance, how to make a classic DVD-like experience, with navigation, ancillary content, encapsulating and aiding presentation and navigation of a movie?</li>
-            <li>Can a single solution be used to bundle interactive media experiences for <b>live</b>, <b>catch-up</b>, <b>video-on-demand (VOD)</b>, and <b>offline</b> distribution mechanisms?</li>
-            <li>Do possible bundling solutions play nicely with <b>edge cache servers</b>? For instance, do they allow to distribute content from edge cache servers in a way that preserves Web security guarantees (based on the notion of <em>origin</em>), and avoids duplication of content?</li>
-            <li>How to <b>orchestrate synchronized playback</b> of media and non-media content, and <b>guarantee consistent user experiences (UX)</b> across devices? For example, how to make a tutorial-like experience, where a lecture is presented, in context, in a web experience, with slides and diagrams delivered using web technologies but synchronized to the video?</li>
-            <li>More generally, how to manage the <b>insertion and overlay of ancillary and interstitial content</b>, including but not limited to advertisements, logo overlays, explanatory overlays, and the like?</li>
-            <li>When a <b>live stream</b> is delivered over-the-top (OTT), or possibly through broadcast, how can playback start as soon as possible? In other words, what mechanisms can be used to start playback of an interative media experience from an arbitrary position in its media timeline, and to only fetch the resources that are useful to create the media experience at that position?</li>
-            <li>Do <b><abbr title="Virtual reality / Augmented reality">XR experiences</abbr></b> create specific bundling requirements?</li>
-            <li>What <b>synergies</b> exist between bundling of interactive media content and bundling of other types of content?</li>
-            <li>What mechanisms may allow <b>integration of monetization schemes</b> in a bundled experience?</li>
-            <li class="todo">TBD</li>
-          </ul>
+
+          <p>The following topics have been proposed, along with references to relevant specifications and documents. Please <a href=
+            "https://github.com/w3c/media-bundle-workshop/">submit a pull request or raise an issue on GitHub</a> to provide feedback and suggest further workshop topics. You may also email François Daoust &lt;<a href="mailto:fd@w3.org">fd@w3.org</a>&gt;.</p>
 
           <section>
-            <h3>References</h3>
-            <p>Some specifications and documents that directly touch on topics mentioned above:</p>
+            <h3 id="packaging">Packaging and distribution</h3>
             <ul>
-              <li>Web packaging specifications under discussion and development within the IETF, notably within the <a href="https://datatracker.ietf.org/wg/wpack/about/">Web Packaging (WPACK) group</a>. This includes <a href="https://www.ietf.org/id/draft-thomson-wpack-content-origin-00.html">Content-Based Origins for the Web</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html">Web Bundles</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html">Signed HTTP Exchanges</a> and <a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
-              <li><a href="https://tools.ietf.org/html/draft-iab-escape-report-00">Report from the IAB ESCAPE Workshop</a> (Exploring Synergy between Content Aggregation and the Publisher Ecosystem)</li>
-              <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a> working draft</li>
-              <li><a href="https://www.w3.org/TR/smil/">Synchronized Multimedia Integration Language (SMIL 3.0)</a></li>
-              <li>MovieLabs <a href="https://movielabs.com/cpe/">Cross-Platform Extras (CPE)</a></li>
-              <li><a href="https://mpeg.chiariglione.org/standards/mpeg-b/carriage-web-resource-isobmff/wd-carriage-web-resource-isobmff">Carriage of Web Resource in ISOBMFF</a> working draft and <a href="https://www.iso.org/standard/75492.html">ISO/IEC 23001-15:2019</a> standard</li>
-              <li><a href="https://mpeg.chiariglione.org/standards/mpeg-a/common-media-application-format">Common Media Application Format</a> (CMAF)</li>
-              <li>The <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a> and <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a> specifications</li>
-              <li>Discussion on <a href="https://w3c.github.io/tpac-breakouts/sessions.html#textcueapi">Next Generation TextTrackCue</a></li>
-              <li><a href="https://svgwg.org/specs/streaming/">SVG Streaming</a></li>
-              <li><a href="https://w3c.github.io/danmaku/usecase.html">Bullet Chatting Use Cases</a></li>
+              <li>How to bundle audio/video content with non-media content and user interactions for <b>streaming use cases</b>? For instance, how to bundle a live stream for a sports event with non-media content such as players' statistics in real-time?</li>
+              <li>How to bundle audio/video content with non-media content and user interactions for <b>offline distribution</b> across devices and runtimes? For instance, how to make a classic DVD-like experience, with navigation, ancillary content, encapsulating and aiding presentation and navigation of a movie?</li>
+              <li>Can a single solution be used to bundle rich media experiences for <b>live</b>, <b>catch-up</b>, <b>video-on-demand (VOD)</b>, and <b>offline</b> distribution mechanisms?</li>
+              <li>How does the need to maintain <b>variants</b> of rich media experiences (e.g. for different languages, resolutions or color spaces) affect packaging strategies?</li>
+              <li>Do possible bundling solutions play nicely with <b>edge cache servers</b>? For instance, do they allow to distribute content from edge cache servers in a way that preserves Web security guarantees (based on the notion of <em>origin</em>), and avoids duplication of content?</lia>
+              <li>What synergies exist between bundling of rich media content and bundling of other types of content?</li>
+              <li>What mechanisms may allow the <b>integration of monetization schemes</b> in a bundled experience?</li>
             </ul>
+
+            <section class="references">
+              <h4 id="packaging-ref">Some relevant documents</h4>
+              <ul>
+                <li>Web packaging specifications under discussion and development within the IETF, notably within the <a href="https://datatracker.ietf.org/wg/wpack/about/">Web Packaging (WPACK) group</a>. This includes <a href="https://www.ietf.org/id/draft-thomson-wpack-content-origin-00.html">Content-Based Origins for the Web</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html">Web Bundles</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html">Signed HTTP Exchanges</a> and <a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
+                <li><a href="https://tools.ietf.org/html/draft-iab-escape-report-00">Report from the IAB ESCAPE Workshop</a> (Exploring Synergy between Content Aggregation and the Publisher Ecosystem)</li>
+                <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a> working draft</li>
+                <li><a href="https://mpeg.chiariglione.org/standards/mpeg-b/carriage-web-resource-isobmff/wd-carriage-web-resource-isobmff">Carriage of Web Resource in ISOBMFF</a> working draft and <a href="https://www.iso.org/standard/75492.html">ISO/IEC 23001-15:2019</a> standard</li>
+                <li><a href="https://mpeg.chiariglione.org/standards/mpeg-a/common-media-application-format">Common Media Application Format</a> (CMAF)</li>
+                <li>The <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a> and <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a> specifications</li>
+              </ul>
+            </section>
           </section>
 
-          <p>
-            Please <a href=
-            "https://github.com/w3c/media-bundle-workshop/">submit a pull request or raise an issue on GitHub</a> to suggest further workshop topics. You may also email François Daoust &lt;<a href="mailto:fd@w3.org">fd@w3.org</a>&gt;.
-          </p>
+          <section>
+            <h3 id="orchestration">Orchestration of rich media experiences</h3>
 
+            <ul>
+              <li>How to <b>orchestrate synchronized playback</b> of media and non-media content? For example, how to make a tutorial-like experience, where a lecture is presented, in context, in a web experience, with slides and diagrams delivered using web technologies but synchronized to the video?</li>
+              <li>What in-band and out-of-band approaches may be used to <b>expose media timed events</b>? How do these approaches fit in media production pipelines?</li>
+              <li>What common formats may be used to describe <b>non-media content</b> attached to the media timeline?</li>
+              <li>How does the need to fetch external resources (such as images, scripts or side media) for rendering at specific points of the media timeline affect the modeling of these resources in a rich media experience? In streaming use cases, what mechanisms can be used to allow playback to start from an arbitrary position in its media timeline, fetching only the resources that are useful to create the media experience at that position?</li>
+              <li>How to manage <b>content overlays</b>, e.g. to track players in live sport events? How to guarantee frame-accuracy rendering when needed?</li>
+              <li>How to manage the insertion of <b>interstitial content</b> (pre-roll, mid-roll, post-roll) with varying lengths? How does insertion affect the timeline and ability to seek into a media stream?</li>
+              <li>How to guarantee <b>smooth playback transitions</b> between a main media stream and interstitial content, especially when media parameters (e.g. codec, resolution, tracks) differ?</li>
+              <li>What capabilities&nbsp;—APIs, semantics, techniques for rendering, processing, personalization, customization, interoperability, etc.—&nbsp;can developers leverage to ensure <b>accessibility</b> of rich media experiences? Are there <b>internationalization</b> considerations?</li>
+            </ul>
+
+            <section class="references">
+              <h4 id="orchestration-ref">Some relevant documents</h4>
+              <ul>
+                <li><a href="https://mpeg.chiariglione.org/standards/mpeg-b/carriage-web-resource-isobmff/wd-carriage-web-resource-isobmff">Carriage of Web Resource in ISOBMFF</a> working draft and <a href="https://www.iso.org/standard/75492.html">ISO/IEC 23001-15:2019</a> standard</li>
+                <li><a href="https://www.w3.org/TR/smil/">Synchronized Multimedia Integration Language (SMIL 3.0)</a></li>
+                <li>MovieLabs <a href="https://movielabs.com/cpe/">Cross-Platform Extras (CPE)</a></li>
+                <li>Discussion on <a href="https://w3c.github.io/tpac-breakouts/sessions.html#textcueapi">Next Generation TextTrackCue</a></li>
+                <li><a href="https://w3c.github.io/danmaku/usecase.html">Bullet Chatting Use Cases</a></li>
+                <li><a href="https://www.w3.org/TR/media-timed-events/">Requirements for Media Timed Events</a></li>
+                <li><a href="https://wicg.github.io/datacue/">DataCue API</a></li>
+                <li><a href="https://svgwg.org/specs/streaming/">SVG Streaming</a></li>
+                <li><a href="https://w3c.github.io/apa/media-accessibility-reqs/">Media Accessibility User Requirements</a></li>
+                <li><a href="https://github.com/wicg/media-source/blob/codec-switching/codec-switching-explainer.md">Codec switching in Media Source Extensions</a></li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h3 id="ux">Consistent User Experience (UX) across devices</h3>
+
+            <ul>
+              <li>What <b>capabilities</b> do applications need to detect a priori to assess whether playback of a rich media experience will be smooth?</li>
+              <li>What <b>performance measurements</b> can applications track to measure the user perceived playback quality in real-time? What additional performance measurements may need to be exposed?</li>
+              <li>How can rich media experiences <b>adapt</b> their needs for performance in real time?</li>
+              <li>What <b>common baseline</b> of technologies may be used across media devices?</li>
+            </ul>
+
+            <section class="references">
+              <h4 id="ux-ref">Some relevant documents</h4>
+              <ul>
+                <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
+                <li><a href="https://w3c.github.io/webmediaapi/">Web Media API</a></li>
+                <li><a href="https://www.w3.org/webperf/">Web Performance Working Group</a> specifications</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h3 id="landscape">Media Standardization Landscape</h3>
+            <p>Building on the previous topics, goal is to hold a plenary discussion on media standards on the Web:</p>
+            <ul>
+              <li>Who is doing what: ongoing work across standardization organisations (SDO)</li>
+              <li>Standardization priorities and roadmap</li>
+            </ul>
+
+            <section class="references">
+              <h4 id="landscape-ref">Some relevant documents</h4>
+              <ul>
+                <li><a href="https://w3c.github.io/web-roadmaps/media/">Overview of Media Technologies for the Web</a></li>
+                <li><a href="https://w3c.github.io/ColorWeb-CG/">High Dynamic Range and Wide Gamut Color on the Web</a></li>
+              </ul>
+            </section>
+          </section>
         </section>
+
         <section>
           <h2 id="attendance">
             How can I attend?
           </h2>
           <p>Attendance is <b>free</b> for all invited participants and is open to the public, whether or not W3C members.</p>
-          <p>If you wish to express interest in attending, please fill out the <span class="todo">registration form (TBD)</span>. We want to fill the room with people with practical experience with authoring and distributing games, and with people involved in relevant Web technologies and their standardization.</p>
-          <p>Because the venue can only accommodate so many people, you must receive an acceptance email in order to attend. Also, be sure to keep an eye on <a href="#dates">these important dates</a>.</p>
-          <p>On top of registration, we encourage you to suggest a specific topic for discussion at the workshop by submitting a <a href="#position-statement">position statement</a>.</p>
+          <p>Please register for the event before <span class="todo">@@@</span> to be notified of the videos availability, of the forum set up to facilitate discussion among registered participants, and of the logistics for the interactive sessions. The Program Committee will only accept participants whose registration data shows relevance to the topic of the workshop.</p>
+
           <p>Our aim is to get a diversity of attendees from a variety of industries and communities, including:</p>
           <ul>
             <li>Technology groups</li>
@@ -156,22 +224,7 @@
           <h2 id="position-statement">
             How can I suggest a presentation?
           </h2>
-
-          <p>This is a workshop, not a conference. Presentations will be short, with topics suggested by submissions and decided by the program committee. Our goal is to actively discuss topics, not to watch presentations.</p>
-
-          <p>In order to facilitate informed discussion, we encourage attendees to read the accepted topics prior to attending the workshop.</p>
-
-          <p>If you wish to present on a topic, you can send a position statement to the Program Committee at <span class="todo">&lt;TBD&gt;</span> by the deadline (see <a href="#dates">important dates</a>). Our <a href="#committee">program committee</a> will review the input provided, and select the most relevant topics and perspectives.</p>
-
-          <p>A good position statement should be a few paragraphs long and include:</p>
-          <ul>
-            <li>Your background on games and/or Web technologies;</li>
-            <li>Which topic you would like to lead discussion on;</li>
-            <li>Links to related supporting resources;</li>
-            <li>Optionally, other topics you think the workshop should cover.</li>
-          </ul>
-
-          <p>Position statements must be in English, preferably in HTML or plain-text format. Images should be included inline in HTML using base64-encoded data URIs. You may include multiple topics, but we ask that each person submit only a single coherent position statement. The position statement and the input provided at registration time (e.g. bio, goals, interests) will be published and linked to from this workshop page.</p>
+          <p>To submit a talk for the workshop, please refer to our information for speakers.</p>
         </section>
         <section>
           <h2 id="w3c">
@@ -206,10 +259,6 @@
           </ul>
         </section>
         <section>
-          <h3 id="host-sponsors">
-            Host
-          </h3>
-          <p class="todo">TBD</p>
           <h3>
             Sponsors
           </h3>
