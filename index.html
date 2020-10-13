@@ -70,7 +70,7 @@
         Give a talk at the workshop!
       </h2>
       <p>
-        If you think you have a perspective on interactive media experiences on the Web worth sharing with the broader community, we would love to hear from you! See our speakers information to learn how to submit a talk and what we will expect from you if you are selected.
+        If you think you have a perspective on rich media experiences on the Web worth sharing with the broader community, we would love to hear from you! See our speakers information to learn how to submit a talk and what we will expect from you if you are selected.
       </p>
     </aside>
     <aside class="box" id="sponsors">
@@ -82,22 +82,22 @@
     <main id="main" class="main">
       <section id="home">
         <p class="todo">
-          This is an <b>unofficial draft</b> call for participation to an <b>unconfirmed</b> W3C Workshop on Interactive Media Content on the Web.
+          This is an <b>unofficial draft</b> call for participation to an <b>unconfirmed</b> W3C Workshop on Rich Media Experiences on the Web.
         </p>
         <section id="intro">
           <h2 id="goals">
             What is the purpose of this workshop?
           </h2>
-          <p>The primary goal of the workshop is to bring together browser vendors, content owners, encoding and authoring tool makers, distributors and distribution enablers, experts in media standards and other relevant areas (e.g. accessibility, scripting, security, web) <b>to converge on technologies for bundling and playback of <a href="#rich-media-experience">rich media experiences</a> on the Open Web Platform for offline distribution and streaming scenarios</b>, and extend the platform with additional technologies when needed.</p>
+          <p>The primary goal of the workshop is to bring together browser vendors, content owners, encoding and authoring tool makers, distributors and distribution enablers, experts in media standards and other relevant areas (e.g. accessibility, scripting, security, web) <b>to converge on technologies for distribution and playback of <a href="#rich-media-experience">rich media experiences</a> on the Open Web Platform</b> (offline and streaming scenarios), and extend the platform with additional technologies when needed.</p>
 
           <p>The secondary goals of the workshop are as follows:</p>
           <ul>
-            <li>Explore interoperation needs to guarantee smooth and consistent playback of experiences that mix media and non-media content across devices.</li>
-            <li>Understand how on-the-fly customization of media experiences and need to adapt to the streaming context in real time affect technical standards used to create and bundle these experiences.</li>
-            <li>Evaluate the opportunities for aligning technical standards used to create interactive media experiences across distribution channels (live streaming, video-on-demand streaming, broadcast, offline)</li>
+            <li>Explore interoperation needs to guarantee smooth and consistent playback of media experiences across devices, including embedded devices.</li>
+            <li>Understand how on-the-fly customization of media experiences and need to adapt to the streaming context in real time affect technical standards used to create and distribute these experiences.</li>
+            <li>Evaluate opportunities for aligning technical standards used to create rich media experiences across distribution channels (live streaming, video-on-demand streaming, broadcast, offline)</li>
           </ul>
 
-          <p>In this document, the term <dfn id="rich-media-experience">rich media experience</dfn> refers to a playback experience with an internal timeline composed of a mix of media content (audio, video), non-media content (captions, images, overlays), content personalized on the fly, and/or interactive content.</p>
+          <p>In this document, the term <dfn id="rich-media-experience">rich media experience</dfn> refers to a playback experience with an internal timeline composed of a mix of media content (audio, video), non-media content (signaling, captions, images, overlays), content personalized on the fly, and/or interactive content.</p>
         </section>
         <section>
           <h2 id="topics">
@@ -106,31 +106,6 @@
 
           <p>The following topics have been proposed, along with references to relevant specifications and documents. Please <a href=
             "https://github.com/w3c/media-bundle-workshop/">submit a pull request or raise an issue on GitHub</a> to provide feedback and suggest further workshop topics. You may also email François Daoust &lt;<a href="mailto:fd@w3.org">fd@w3.org</a>&gt;.</p>
-
-          <section>
-            <h3 id="packaging">Packaging and distribution</h3>
-            <ul>
-              <li>How to bundle audio/video content with non-media content and user interactions for <b>streaming use cases</b>? For instance, how to bundle a live stream for a sports event with non-media content such as players' statistics in real-time?</li>
-              <li>How to bundle audio/video content with non-media content and user interactions for <b>offline distribution</b> across devices and runtimes? For instance, how to make a classic DVD-like experience, with navigation, ancillary content, encapsulating and aiding presentation and navigation of a movie?</li>
-              <li>Can a single solution be used to bundle rich media experiences for <b>live</b>, <b>catch-up</b>, <b>video-on-demand (VOD)</b>, and <b>offline</b> distribution mechanisms?</li>
-              <li>How does the need to maintain <b>variants</b> of rich media experiences (e.g. for different languages, resolutions or color spaces) affect packaging strategies?</li>
-              <li>Do possible bundling solutions play nicely with <b>edge cache servers</b>? For instance, do they allow to distribute content from edge cache servers in a way that preserves Web security guarantees (based on the notion of <em>origin</em>), and avoids duplication of content?</lia>
-              <li>What synergies exist between bundling of rich media content and bundling of other types of content?</li>
-              <li>What mechanisms may allow the <b>integration of monetization schemes</b> in a bundled experience?</li>
-            </ul>
-
-            <section class="references">
-              <h4 id="packaging-ref">Some relevant documents</h4>
-              <ul>
-                <li>Web packaging specifications under discussion and development within the IETF, notably within the <a href="https://datatracker.ietf.org/wg/wpack/about/">Web Packaging (WPACK) group</a>. This includes <a href="https://www.ietf.org/id/draft-thomson-wpack-content-origin-00.html">Content-Based Origins for the Web</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html">Web Bundles</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html">Signed HTTP Exchanges</a> and <a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
-                <li><a href="https://tools.ietf.org/html/draft-iab-escape-report-00">Report from the IAB ESCAPE Workshop</a> (Exploring Synergy between Content Aggregation and the Publisher Ecosystem)</li>
-                <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a> working draft</li>
-                <li><a href="https://mpeg.chiariglione.org/standards/mpeg-b/carriage-web-resource-isobmff/wd-carriage-web-resource-isobmff">Carriage of Web Resource in ISOBMFF</a> working draft and <a href="https://www.iso.org/standard/75492.html">ISO/IEC 23001-15:2019</a> standard</li>
-                <li><a href="https://mpeg.chiariglione.org/standards/mpeg-a/common-media-application-format">Common Media Application Format</a> (CMAF)</li>
-                <li>The <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a> and <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a> specifications</li>
-              </ul>
-            </section>
-          </section>
 
           <section>
             <h3 id="orchestration">Orchestration of rich media experiences</h3>
@@ -164,21 +139,48 @@
           </section>
 
           <section>
-            <h3 id="ux">Consistent User Experience (UX) across devices</h3>
+            <h3 id="embedded">Challenges for embedded devices</h3>
 
             <ul>
-              <li>What <b>capabilities</b> do applications need to detect a priori to assess whether playback of a rich media experience will be smooth?</li>
+              <li>How do <b>low memory and restricted CPU</b> affect media playback scenarios? How does that inform the list of media features that browsers should support?</li>
+              <li>What are takeaways from experiences that use <b>bespoke versions of browser codebases</b> e.g. to add native support for ad signaling on embedded devices?</li>
+              <li>What <b>capabilities</b> do applications need to detect a priori to assess whether playback will be smooth?</li>
               <li>What <b>performance measurements</b> can applications track to measure the user perceived playback quality in real-time? What additional performance measurements may need to be exposed?</li>
               <li>How can rich media experiences <b>adapt</b> their needs for performance in real time?</li>
               <li>What <b>common baseline</b> of technologies may be used across media devices?</li>
             </ul>
 
             <section class="references">
-              <h4 id="ux-ref">Some relevant documents</h4>
+              <h4 id="embedded-ref">Some relevant documents</h4>
               <ul>
                 <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
                 <li><a href="https://w3c.github.io/webmediaapi/">Web Media API</a></li>
                 <li><a href="https://www.w3.org/webperf/">Web Performance Working Group</a> specifications</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h3 id="packaging">Packaging and distribution</h3>
+            <ul>
+              <li>How to bundle audio/video content with non-media content and user interactions for <b>streaming use cases</b>? For instance, how to bundle a live stream for a sports event with non-media content such as players' statistics in real-time?</li>
+              <li>How to bundle audio/video content with non-media content and user interactions for <b>offline distribution</b> across devices and runtimes? For instance, how to make a classic DVD-like experience, with navigation, ancillary content, encapsulating and aiding presentation and navigation of a movie?</li>
+              <li>Can a single solution be used to bundle rich media experiences for <b>live</b>, <b>catch-up</b>, <b>video-on-demand (VOD)</b>, and <b>offline</b> distribution mechanisms?</li>
+              <li>How does the need to maintain <b>variants</b> of rich media experiences (e.g. for different languages, resolutions or color spaces) affect packaging strategies?</li>
+              <li>Do possible bundling solutions play nicely with <b>edge cache servers</b>? For instance, do they allow to distribute content from edge cache servers in a way that preserves Web security guarantees (based on the notion of <em>origin</em>), and avoids duplication of content?</lia>
+              <li>What synergies exist between bundling of rich media content and bundling of other types of content?</li>
+              <li>What mechanisms may allow the <b>integration of monetization schemes</b> in a bundled experience?</li>
+            </ul>
+
+            <section class="references">
+              <h4 id="packaging-ref">Some relevant documents</h4>
+              <ul>
+                <li>Web packaging specifications under discussion and development within the IETF, notably within the <a href="https://datatracker.ietf.org/wg/wpack/about/">Web Packaging (WPACK) group</a>. This includes <a href="https://www.ietf.org/id/draft-thomson-wpack-content-origin-00.html">Content-Based Origins for the Web</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html">Web Bundles</a>, <a href="https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html">Signed HTTP Exchanges</a> and <a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
+                <li><a href="https://tools.ietf.org/html/draft-iab-escape-report-00">Report from the IAB ESCAPE Workshop</a> (Exploring Synergy between Content Aggregation and the Publisher Ecosystem)</li>
+                <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a> working draft</li>
+                <li><a href="https://mpeg.chiariglione.org/standards/mpeg-b/carriage-web-resource-isobmff/wd-carriage-web-resource-isobmff">Carriage of Web Resource in ISOBMFF</a> working draft and <a href="https://www.iso.org/standard/75492.html">ISO/IEC 23001-15:2019</a> standard</li>
+                <li><a href="https://mpeg.chiariglione.org/standards/mpeg-a/common-media-application-format">Common Media Application Format</a> (CMAF)</li>
+                <li>The <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a> and <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a> specifications</li>
               </ul>
             </section>
           </section>
